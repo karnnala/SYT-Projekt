@@ -33,7 +33,6 @@ void setup() {
   WiFi.mode(WIFI_STA);
   WiFi.disconnect();
 
-  // Beide ESP32 auf denselben Kanal setzen
   esp_wifi_set_promiscuous(true);
   esp_wifi_set_channel(1, WIFI_SECOND_CHAN_NONE);
   esp_wifi_set_promiscuous(false);
