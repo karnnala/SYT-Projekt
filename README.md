@@ -50,7 +50,7 @@ if (lastButtonState == HIGH && currentButtonState == LOW) {
 }
 ```
 
-Nur beim Drücken (HIGH→LOW) wird gesendet. Das verhindert, dass beim Halten dauernd Pakete geschickt werden.
+Nur beim Drücken wird gesendet. Das verhindert, dass beim Halten dauernd Pakete geschickt werden.
 
 ---
 
@@ -98,3 +98,17 @@ new Chart(document.getElementById('c'), {type:'doughnut', ...})
 ```
 
 Die Webseite lädt Chart.js und zeigt Wins/Losses als Donut-Diagramm. Die Seite aktualisiert sich alle 2 Sekunden automatisch.
+
+### Warum?
+
+##### Warum haben wir den Grafen gemacht wie er ist?
+
+Douhgnut Diagramme sind relativ simpel zu schreiben. Den Vorteil kann man sich nehmen da das Diagramm stehts leicht zu lesen ist und man direket erkennt was verglichen wird.
+
+##### Warum haben wir die Ausgabe so designed wie sie ist?
+
+Das wichtigste im Spiel ist dein gesamter Score, daher ist er strategisch in der Mitte des Displays groß platziert. Der Highscore ist nicht so relevant aber trotzdem cool zu wissen, daher hat er ein Platz in der rechts oberen Ecke bekommen.
+
+##### Warum haben wir das Projekt gebaut?
+
+Unser Projektleiter hat eine sehr starke Glückspielsucht und wollte daher eine kostenfreie Version bauen um seine Sucht zu stillen
